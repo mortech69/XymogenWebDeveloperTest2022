@@ -4,13 +4,12 @@
 
 # Date: 10/30/2022
 
-# Description: In this project, you will find successful answers to questions given in the Web Developer Test 2022 required by Xymogen. I was not able to answer them adequately in the live test due to the time constraints, which in my opinion were unrealistic. The results of test no way reflects my knowledge or my skills in Modern Web Development Technologies. However, this project does. I copied 4 of the questions and I answer them here.
+# Description: In this project, you will find successful answers to questions given in the Web Developer Test 2022 required by Xymogen. I was not able to answer them adequately in the live test due to the time constraints, which in my opinion were unrealistic. The results of the test in no way reflect my knowledge or my skills in Modern Web Development Technologies. However, this project does. I copied 4 of the questions and give answers to them in this project.
 
-The questions are incomplete, for I copied them while taking a timed test, but I include what I copied in this project, and you can get the gist of the questions by reviewing them. You will find them in the Text files as "Question 1", "Question 2", etc.
+The questions are fragmented and partial, for I copied them during this timed test, but I include what I was able to copy, and you will get the gist of them. You can review the questions and a brief description of how I chose to answer. You me review them in the static HTML files with the titles “Question1,” “Question2,” and “Question3,” respectively.
+ 
+There are two types of questions addressed, first, ASP.NET MCV Core questions and, second, JavaScript-type questions. Included is an ASP.NET MVC Core Project where you may find those answers in a functional project. 
 
-The MVC questions are found in the ASP.NET MCV Project included in this repository. The Project ran on my localhost, using the assigned port (https://localhost:7119/), you will have to make the required adjustments to run the project in your environment.
-The first 2 questions are MVC Controllers and Actions questions and are found in this ASP.NET MCV Project The remaining questions are JavaScript questions and are included in the static HTML files located in the JavaScript Answers folder.
-
-A careful and considered look and these answers, as well, as their conciseness, cleanliness, and efficiency, are the true indication of my ability as a Web Developer. I have embellished them by going beyond the required answers and decorated them with CSS styling and made appropriate comments to boot.
-
+The remaining questions are JavaScript and jQuery-type questions, and the answers are included in the static HTML files located in the JavaScript Answers folder.
+A careful and considered look and these answers, as well, as their conciseness, cleanliness, and efficiency, are the true indication of my ability as a Web Developer. I have embellished them some using Dependency Injection, CSS, comments and other decorations that go beyond what was required, however, I intentionally did this to demonstrate that I am a tested Web Developer.
 
