@@ -4,7 +4,7 @@
 
 # Date: 10/30/2022
 
-# Description: In this project, you will find successful answers to questions given in the Web Developer Test 2022 required by Xymogen. I was not able to answer them adequately in the live test due to them time constraints, which in my opinion were unrealistic. The results of test no way reflects my knowledge or my skills in Modern Web Development Technologies. However, this project does. I copied 4 of the questions and I answer them here.
+# Description: In this project, you will find successful answers to questions given in the Web Developer Test 2022 required by Xymogen. I was not able to answer them adequately in the live test due to the time constraints, which in my opinion were unrealistic. The results of test no way reflects my knowledge or my skills in Modern Web Development Technologies. However, this project does. I copied 4 of the questions and I answer them here.
 
 The questions are incomplete, for I copied them while taking a timed test, but I include what I copied in this project, and you can get the gist of the questions by reviewing them. You will find them in the Text files as "Question 1", "Question 2", etc.
 
