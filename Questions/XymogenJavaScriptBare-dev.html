@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Bare JavaScript Answer</title>
+	    <meta charset = "utf-8">
+        <script type="text/javascript" src="src/jquery.js"></script>
+    </head>
+    <body>
+        <h1>Bare JavaScript Answer</h1>
+    </body>
+</html>
+<script>
+$(document).ready(function(){
+
+    //function call
+    minimalNumberOfPackages(21,3,1);
+
+    //function from test
+    function minimalNumberOfPackages(items, lgPackages, smPackages)
+    { var lgOut = 0, smOut = 0;
+        //logic
+        //----------------------------------
+
+            while(lgPackages > 0 && items >= 5)
+            {
+                lgOut++;
+                items = (items - 5); 	
+                lgPackages--;
+            }
+
+            while(smPackages > 0 && items > 0)
+            {
+                smOut++;
+                items--; 
+                smPackages--;	
+            }
+        //---------------------------------
+
+        alert('Large Packages: ' + lgOut + ', Small Packages: ' + smOut);
+    };
+});
+</script>

@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Web Developer Test 2022 for xymogen</title>
+	
+	<meta charset ="utf-8">
+	<script  type = "text/javascript" src ="src/jquery.js"></script>
+	<script type="text/javascript" src="src/EmbellishedJavaScriptAnswer.js"></script>
+	<link rel="stylesheet" href="src/site.css">
+	<style>
+		
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		h1{
+		text-align: center;
+		}
+		
+		.fields{
+			background: #fff;
+			border-radius: 8px;
+			cursor: pointer;
+			height: 24px;
+			padding: 0 8px;
+			width: auto;
+		}
+		
+		#submit{
+			background: #fff;
+			border-radius: 8px;
+			cursor: pointer;
+			height: 24px;
+			padding: 0 8px;
+			transition: color .25s,background .25s;
+			width: auto;
+		}
+		
+		#submit:hover{
+			background-color: #d6dcea;
+		}
+		
+		.sections{
+			margin-bottom: 1em;
+		}
+		
+		.headers{
+			background-color: #d6dcea;
+			border-radius: 16px 16px 0 0;
+			color: #24335a;
+			display: block;
+			font-size: 20px;
+			font-weight: bold;
+			margin: 0 0 0 0;
+			padding: 0.5em 1em ;
+			position: relative;
+			text-align: center;
+			z-index: 2;
+			}
+		
+		.content{
+			margin: 0;
+			background: #081b4b;
+			color: #fff;
+			border-radius: 16px;
+			border-top-right-radius: 0;
+			border-top-left-radius: 0;
+			display: block;
+			overflow: auto;
+			overflow-wrap: normal;
+			padding-top: 2em;
+			padding: 1em;
+			white-space: normal;
+			word-wrap: normal;
+			}
+			
+		#container {
+			margin: 0 20% 0 20%;
+			padding-top: 2em;
+			color: #4d5b7c;
+			font-size: 16px;
+			position: relative;
+			z-index: 0;
+			}
+	
+		
+	</style>
+	
+</head>
+<body>
+<div id ="container">
+	<h1>Web Developer Test 2022 for Xymogen</h1>
+	<div class = "headers">Input Quantities</div>
+	<div id = "form" class ="content">
+		<label>Items</label><br/><input id = "itms" class="fields" name = "items" type = "text" value = ""/><br/><br/>
+		<label>Large Packages</label><br/><input id = "lP"  class="fields" name = "largeP" type = "text" value = ""/><br/><br/>
+		<label>Small Packages</label><br/><input id = "sP" class="fields"  name ="smallP" type = "text" value = ""/><br/><br/>
+	
+		<input id ="submit"   type ="button" value ="submit"/>
+	
+	</div>
+		<dl>
+			<div class = "sections">
+				<div class = "headers">Incoming</div>
+				<div  id ="incoming" class="content" >
+					<dt>Items</dt><dd></dd>
+					<dt>Large Packages Available</dt><dd></dd>
+					<dt>Small Packages Available</dt><dd id></dd>
+				</div>
+			</div>
+			<div class = "sections">
+				<div  class = "headers">Processed</div>
+				<div id = "processed" class ="content">
+					<dt>Items Processed</dt><dd></dd>
+					<dt>Large Packages</dt><dd></dd>
+					<dt>Small Packages</span></dt><dd></dd>
+				</div>
+			</div>
+			<div class = "sections">
+				<div class = "headers">Delivered</div>
+				<div  id ="delivered"class ="content">
+					<dt>Total Packages</dt><dd></dd>
+					<dt>Total Items Delivered</dt><dd></dd>
+				</div>
+			</div>	
+			<div class = "sections">
+				<div class = "headers">Remaining</div>
+				<div id ="remaining" class ="content">
+					<dt>Empty Large Packages</dt><dd></dd>
+					<dt>Empty Small Packages</dt><dd ></dd>
+					<dt>Items Remaining</dt><dd id></dd>
+				</div>
+			</div>
+		</dl>
+	</div>
+</div>
+</body>
+</html>
+

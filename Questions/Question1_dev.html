@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 1</title>
+	<meta charset = "utf-8">
+	<script  type = "text/javascript" src ="src/jquery.js"></script>
+	<script type = "text/javascript" src = "src/bootstrap.js"></script> 
+
+	<link rel="stylesheet" href="src/bootstrap.css">
+	<style>
+	body{
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	h1{
+		text-align: center;
+	}  
+    
+    h4{
+       
+    }
+    li{
+        margin: 1em;
+    }
+	#fragment{
+		background-color: #d6dcea;
+		border-radius: 16px 16px 16px 16px;
+        margin: 1em 1em 1em 1em;
+        padding: 1em;
+	}
+  
+	pre{
+	padding: 1em;
+	}
+	aside{
+		background-color: #ffaec8;
+		padding: 0.5em;
+		
+	}
+	
+	aside>b{
+		color:red;
+		font-family: Arial, Helvetica, sans-serif;
+		
+	}
+	span{
+		font-family:consolas;
+	}
+	
+	#gist{
+		
+	}
+	</style>
+</head>
+<body>
+<div class = "container">
+        <h1>Web Developer Test Question 1</h1>
+    <div class="row">
+        <div class="col-sm">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h3>Question</h3>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+        		<div id ="gist"><h2>Gist</h2>
+        		<h4>Basically, to invoke the ASP.NET MVC Controller Action method by an Http Post in the Razor View (.cshtml) and, once the data is returned, the new Person object is to be added to the List Collection.</h4>
+        		<div>
+                <img src ="images/Frag_1.jpg"/> 
+        		</div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h3>Bare Answer</h3>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4>Question: Add a new <span>Person</span> object to the <span>List</span> collection. Here is my answer on my workspace.</h4>
+                <ol>
+        			<li>Defined the Action provided.</li>
+                        <img src ="images/Answer_Embellished_1.JPG"/>
+                    <li>Added the Razor sytax provided.</li>
+                        <img src ="images/Razor_Answer_1.JPG"/>
+                    <li>Invoke Action, by populating the <span>User</span> and the <span>Contact</span> field, and posting it by hitting the <span>Save</span> button.</li>
+                        <img src ="images/PopulatedForm_1.JPG"/>
+                    <li>Success!, the <span>Person</span> object is added to the <span>Persons</span> list.</li>
+                        <img src ="images/PersonAdded_1.JPG"/><br/><br/>
+
+                    <h4>This is very bare and minimal, so I embellished the answer with a full-flegde process that not only adds the <span>Person</span> to the <span>List</span> but also persists him in a JSON file, and even used the Inversion of Control (IoC) pattern in the accomplishmet of it. This is a much better reflection my skills as a Web Developer.</h4><h2>NOW GO LOOK AT THE EMBELLISHED ANSWER!</h2>
+                </ol> 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h3>Embellished Answer</h3>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4>This answer demonstrates the full and apropiate process of adding a object to an ASP.NET Project</h4>
+        		<ol>
+        			<li>Added controller. (<strong>NOTE:</strong> I am using <i>Visual Studios 2022 Comunity Edition</i>.) </li>
+        			<li>Used the empty controller template and named it <span>PersonController</span>.</li>
+        			<li>Defined the <span>Person</span> class and the <span>Contact</span> class and added them to the Models folder provided by default in a ASP.NET MVC Web Application.
+                        <br/></br>
+                        <img src ="images/Controller_Model_1.jpg"/>   
+        			<li>Declared and instantiated the <span>static List Persons </span>class.</li>
+        			    <img src ="images/List_1.JPG"/> 
+        			<li>Added a JSON file to act as the persistance layer (database), and place it in a folder named <span>data</span> in the <span>wwwroot</span> section of the solution. Made sure JSON was valid.</li>
+                        <img src ="images/Json_data_1.jpg"/></li><br><br/>
+                        <img src ="images/JsonViewer_1.jpg"/>
+        			<li>Add <span>Services</span> folder to the solution, define a class entitled <span>JsonPersonService</span> and added it to the <span>Services</span> folder. The <span>JsonPersonService</span> deserializes the JSON file for consumption.</li>
+                        <img src ="images/JsonPersonService_1.jpg"/>
+                    <li>Registered the Service in the <span>Program.cs</span> file. <b>NOTE: </b>The <span>Startup.cs</span> no longer exists in an ASP.NET solution. All configurations are done in the <span>Program</span> file in .NET 6.</li>
+                        <img src ="images/RegisterJsonService_1.jpg"/>
+        			<li>Passed the Service into the Controller, invoked the Action to populate a list and pass the list on the <span>View</span></li>
+                        <img src ="images/InvokeService_1.jpg"/>
+                    <li>Entered the following path <span>(localhost:port).../Person/PersonList</span> in the browser address bar. Ran the application, and success!.</li>
+        			    <img src ="images/PersonsList_1.jpg"/>
+        			<li>Now, I get to the core answer, which is to add a new <span>Person</span> object to the list. However, I went beyond and added the <span>Person</span> object to a persistance layer (<span>persons.json</span>).</li>
+        			<li>I defined the Action provided (Pretty, much exactly as the bare answer above).</li>
+                        <img src ="images/Answer_Embellished_1.JPG"/>
+                    <li>Add the Razor sytax provided. But where? I decided for the <span>Index</span> View.</li>
+                        <img src ="images/Razor_Answer_1.JPG"/>
+                    <li>Navigate to the <span>Person/Index</span>, populated the <span>User</span> and the <span>Contact</span> field, and posted it.</li>
+                        <img src ="images/PopulatedForm_1.JPG"/>
+                    <li>Success!, like above, the <span>Person</span> object is added to the <span>Persons</span> list.</li>
+                        <img src ="images/PersonAdded_1.JPG"/>
+        
+        		</ol>
+        		</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+</body>

@@ -11,7 +11,7 @@ namespace XymogenWebDeveloperTest2022.Controllers
         public PersonController(JsonPersonService personService) 
             => _personService = personService;
 
-        public List<Person> Persons = new List<Person>();
+        public  static List<Person> Persons = new List<Person>();
         public IActionResult Index()
         { 
             return View();
@@ -21,7 +21,7 @@ namespace XymogenWebDeveloperTest2022.Controllers
         {
             Persons.Add(person);
 
-            return View(Persons);
+            return View(person);
         }
         [HttpGet]
         public IActionResult PersonsList()
