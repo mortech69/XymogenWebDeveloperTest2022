@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Question</title>
+	<meta charset = "utf-8">
+	<script  type = "text/javascript" src ="src/jquery.js"></script>
+	<script type = "text/javascript" src = "src/bootstrap.js"></script> 
+
+	<link rel="stylesheet" href="src/bootstrap.css">
+	<style>
+	body{
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	h1{
+		text-align: center;
+	}  
+    
+    h4{
+       
+    }
+    li{
+        margin: 1em;
+    }
+	#fragment{
+		background-color: #d6dcea;
+		border-radius: 16px 16px 16px 16px;
+        margin: 1em 1em 1em 1em;
+        padding: 1em;
+	}
+  
+	pre{
+	padding: 1em;
+	}
+	aside{
+		background-color: #ffaec8;
+		padding: 0.5em;
+		
+	}
+	
+	aside>b{
+		color:red;
+		font-family: Arial, Helvetica, sans-serif;
+		
+	}
+	span{
+		font-family:consolas;
+	}
+	
+	#gist{
+		
+	}
+	</style>
+</head>
+<body>
+<div class = "container">
+        <h1>Web Developer JavaScript Question</h1>
+    <div class="row">
+        <div class="col-sm">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h3>Question</h3>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+        		<div id ="gist"><h2>Gist</h2>
+        		<h4>The question to which this  code fragment pertained, asked to write the logic that will calculate the number of large packages and the small packages the items will be able to produce. The large packages can contain 5 items and small packages 1 item.</h4>
+                <div id ="fragment"><pre>function minimalNumberOfPackages(items, availableLargePackages, availableSmallPackages) {
+                    // Your code goes here
+                    
+                    }
+                    console.log(minimalNumberOfPackages(16, 2, 10));</pre></div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h3>Bare Answer</h3>
+                
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h4>This is the best logic I found to resolve the requierment. Double-click the image to see result.</h4>
+                <button id = "target" type = "submit" name = "learn" value = "myimage">
+                    <p>Double Click the Image to see the Result</p>
+                    <img src ="images/BareJavaScript_1.jpg"/>
+                 </button>
+                   
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h3>Embellished Answer</h3>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
+
+<script>$(function(){
+    $( "#target" ).click(function() {
+
+    //function call
+    minimalNumberOfPackages(21,3,1);
+
+    //function from test
+    function minimalNumberOfPackages(items, lgPackages, smPackages)
+    { var lgOut = 0, smOut = 0;
+        //logic
+        //----------------------------------
+                while(lgPackages > 0 && items >= 5)
+                {
+                    lgOut++;
+                    items = (items - 5); 	
+                    lgPackages--;
+                }
+
+                while(smPackages > 0 && items > 0)
+                {
+                    smOut++;
+                    items--; 
+                    smPackages--;	
+                }
+                     //---------------------------------
+                    alert('Large Packages: ' + lgOut + ', Small Packages: ' + smOut);
+                }; 
+        
+     });
+  })</script>

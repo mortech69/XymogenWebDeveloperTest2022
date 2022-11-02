@@ -22,10 +22,10 @@ var processor = {
 				 {
 				 	$('#submit').click(function(event)
 				 	{
-				 		const val = processor.incoming()
-				 		const initialValues = processor.preserve(val);
-				 			processor.assignFields(val, processor.fields($('#incoming')));
-				 		const out = processor.process(val);
+				 		const values = processor.incoming()
+				 		const initialValues = processor.preserve(values);
+				 			processor.assignFields(values, processor.fields($('#incoming')));
+				 		const out = processor.process(values);
 				 			processor.assignFields(out, processor.fields($('#processed')));
 				 		const del = processor.delivered(out);
 				 			processor.assignFields(del, processor.fields($('#delivered')));
@@ -35,10 +35,10 @@ var processor = {
 				 },
 				 incoming: function()
 				 {
-				 	const val = [];
+				 	const values = [];
 				 	$(".fields").each(function(){
-				 	val.push($(this).val())})
-				 	return val;
+				 	values.push($(this).val())})
+				 	return values;
 				 }, 
 				 process: function (values)
 				 {  
@@ -68,19 +68,19 @@ var processor = {
 				 	d[1] = out[0];
 				 	return d;
 				 },
-				 remaining: function(vl, out)
+				 remaining: function(values, out)
 				 {
 				 	const rem = [0,0,0]
-				 	rem[0] = (vl[1] - out[1]);
-				 	rem[1] = (vl[2] - out[2]);
-				 	rem[2] = (vl[0] - out[0]);
+				 	rem[0] = (values[1] - out[1]);
+				 	rem[1] = (values[2] - out[2]);
+				 	rem[2] = (values[0] - out[0]);
 				 	return rem;
 				 },
-				 preserve: function (val)
+				 preserve: function (values)
 				 {
 				 	const initial = [];
-				 	for (let i = 0; i < val.length; i++) {
-				 		 initial[i] = val[i];
+				 	for (let i = 0; i < values.length; i++) {
+				 		 initial[i] = values[i];
 				 	}
 				 	return initial;
 				 },
@@ -89,7 +89,8 @@ var processor = {
 				 	var i = 0;
 				 	for (const innerHTML in fields)
 				 	{
-				 		$(fields[i]).html(values[i]); i++;
+				 		$(fields[i]).html(values[i]); 
+						i++;
 				 	}
 				 },
 				 fields: function(id)
